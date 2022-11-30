@@ -1,38 +1,278 @@
 .App {
-  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Profile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 86%;
+  margin-left: 7%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.profile-description {
+  width: 50%;
+}
+
+.profile-description h2 {
+  color: #252525;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.profile-description p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 28px;
+  color: gray;
+}
+
+.profile-description .icons {
+  font-size: 30px;
+}
+
+.profile-description .icons .github {
+  color: #252525;
+  margin-right: 15px;
+}
+
+.profile-description .icons .linkedin {
+  color: #2868b2;
+  font-size: 31px;
+  padding-top: 0px;
+}
+
+.profile-description .buttons {
+  margin-top: 40px;
+}
+
+.profile-description .button {
+  color: white;
+  background-color: #572c8b;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  margin-right: 20px;
+}
+
+.profile-description .button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.profile-picture {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profilePicture {
+  width: 80%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .Profile {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 745px) {
+  .Profile {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .profile-description,
+  .profile-picture {
+    width: 100%;
+  }
+
+  .profile-picture {
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
+/* SKILLS */
+
+.Skills h2 {
+  margin-left: 7%;
+  color: #252525;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 50s linear infinite;
+  display: flex;
+  width: calc(250px * 20);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100px;
+  height: 100px;
+}
+
+.bigger {
+  width: 105px !important;
+}
+
+.slide img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+/* PROJECTS */
+
+.Projects {
+  background-color: white;
+}
+
+.Projects h2 {
+  margin-left: 7%;
+  color: #252525;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+  margin-top: 120px;
+}
+
+.Projects h3 {
+  color: gray;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-left: 7%;
+}
+
+.carousel-projects {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 60px;
+}
+
+.carousel-projects div {
+  margin-right: 2%;
+  width: 300px;
+}
+
+.carousel-projects div p {
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: justify;
+  color: gray;
+  line-height: 20px;
+  margin-top: 15px;
+  opacity: 0;
+  font-weight: 300;
+}
+
+.carousel-projects img {
+  margin-top: 20px;
+  width: 300px;
+  height: 173.26px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+.vinted {
+  margin-left: 3%;
+}
+
+.tripadvisor {
+  margin-right: 3%;
+}
+
+.carousel-projects div:hover {
+  cursor: pointer;
+}
+
+.carousel-projects div:hover img {
+  /* box-shadow: 0px 10px 30px #868a8a; */
+  transition: all 0.3s ease-out !important;
+}
+
+.carousel-projects div:hover p {
+  opacity: 0.8;
+  transition: all 0.4s ease-out !important;
+}
+
+.airbnb {
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 80px;
+}
+
+.airbnb-images {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.airbnb-images img {
+  width: 160px;
+}
+
+.airbnb-p {
+  width: 320px;
+  height: 322.23px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.airbnb div p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: gray;
+  opacity: 0.8;
 }
