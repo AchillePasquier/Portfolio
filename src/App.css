@@ -175,13 +175,13 @@
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-bottom: 60px;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .Projects h3 {
-  color: gray;
+  color: #572c8b;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.2px;
   margin-left: 7%;
 }
@@ -275,4 +275,201 @@
   line-height: 28px;
   color: gray;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1117px) {
+  .airbnb {
+    flex-direction: column;
+  }
+
+  .airbnb-p {
+    height: auto;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .airbnb {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images {
+    width: 100%;
+  }
+
+  .airbnb-images img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .airbnb {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  .airbnb-p {
+    width: 100%;
+  }
+
+  .airbnb div p {
+    text-align: center;
+  }
+}
+
+/* CONTACT */
+
+.Contact {
+  /* background-color: #572c8b; */
+  /* border-radius: 100% 0% 100% 0% / 7% 100% 0% 93%; */
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  /* opacity: 0.8; */
+  background: rgb(121, 86, 162);
+  background: linear-gradient(
+    180deg,
+    rgba(121, 86, 162, 1) 0%,
+    rgba(87, 44, 139, 1) 70%
+  );
+}
+
+.Contact h2 {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 80px;
+  margin-top: 100px;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.contact-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.contact-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 361.5px;
+}
+
+.contact-3 img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.contact-3 p {
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.contact-3 .email:hover {
+  color: #006eff;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.contact-3 .icons {
+  font-size: 30px;
+}
+
+.contact-3 .icons .github {
+  margin-right: 20px;
+}
+
+.contact-3 .icons .github:hover {
+  color: #252525;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.contact-3 .icons .linkedin:hover {
+  color: #2868b2;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.contact-2 form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-2 form label {
+  color: whitesmoke;
+}
+
+.contact-2 form input,
+.contact-2 form textarea,
+.contact-2 form button {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 100% !important;
+  min-height: 28px;
+  font-size: 17px;
+}
+
+.contact-2 form textarea {
+  min-height: 70px !important;
+}
+
+.contact-2 form button {
+  color: #252525;
+  background-color: gainsboro;
+  opacity: 0.8;
+}
+
+.contact-2 form button:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  opacity: 1;
+  transition: all 0.1s ease-out;
+}
+
+.footer {
+  text-align: center;
+  color: gray;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 832px) {
+  .contact-2 {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    align-items: center;
+  }
+
+  .contact-2 form {
+    width: 80%;
+  }
 }

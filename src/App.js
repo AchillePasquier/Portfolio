@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import "./index.css";
 
-//import profilePicture from "./images/PhotoPortfolio.png";
+import profilePicture from "./images/PhotoPortfolio.png";
 import manOnTable from "./images/manOnTable.svg";
 // import reactIcon from "./images/React-icon.png";
 import htmlIcon from "./images/html.png";
@@ -149,9 +149,9 @@ function App() {
         </div>
       </div>
       <div className="Projects">
-        <h2>Projects 🖥️</h2>
+        <h2>Projects 💻</h2>
         <div className="web-projects">
-          <h3>Web Projects 💻</h3>
+          <h3>Web Projects</h3>
           <div className="carousel-projects">
             <div className="vinted">
               <img src={captureVinted} alt="vinted" data-aos="fade-up" />
@@ -209,7 +209,7 @@ function App() {
           </div>
         </div>
         <div className="mobile-projects">
-          <h3>Mobile Project 📱</h3>
+          <h3>Mobile Project</h3>
           <div className="airbnb">
             <div className="airbnb-images">
               <img
@@ -241,6 +241,40 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="Contact">
+        <h2>Contact ☎️</h2>
+        <div className="contact-2">
+          <div className="contact-3">
+            <img src={profilePicture} alt="profile-picture" />
+            <p className="email">acpasquier96@gmail.com</p>
+            <p className="icons">
+              <FontAwesomeIcon icon={faGithub} className="github" />
+              <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+            </p>
+            <p></p>
+          </div>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <label for="name">Name :</label>
+            <input type="text" name="name" />
+
+            <label for="name">Email :</label>
+            <input type="email" name="email" />
+
+            <label for="name">Message :</label>
+            <textarea name="message"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <p className="footer">Made by Achille Pasquier</p>
       </div>
     </div>
   );
