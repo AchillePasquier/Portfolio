@@ -66,6 +66,7 @@
 .profile-description .button:hover {
   opacity: 0.8;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 .profile-picture {
@@ -387,8 +388,11 @@
 
 .contact-3 .email:hover {
   color: #006eff;
-  cursor: pointer;
   transition: all 0.1s ease-out;
+}
+
+.contact-3 a {
+  color: whitesmoke;
 }
 
 .contact-3 .icons {

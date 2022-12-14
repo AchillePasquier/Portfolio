@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -49,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="Profile">
+      <div className="Profile" id="profile">
         <div className="profile-description">
           <h2>Hi 👋 I'm Achille</h2>
           <p>
@@ -59,14 +60,39 @@ function App() {
             and frameworks.
           </p>
           <p className="icons">
-            <FontAwesomeIcon icon={faGithub} className="github" />
-            <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+            <a
+              href="https://github.com/AchillePasquier"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/achille-pasquier-3150a41b3/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+            </a>
           </p>
           <section className="buttons">
-            <a className="button" href="#">
+            {/* <a className="button" href="#">
               CONTACT ME
-            </a>
-            <a className="button" href="#">
+            </a> */}
+            <Link
+              className="button"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={800}
+            >
+              CONTACT ME
+            </Link>
+            <a
+              className="button"
+              href="https://www.linkedin.com/in/achille-pasquier-3150a41b3/"
+            >
               SEE MY RESUME
             </a>
           </section>
@@ -80,75 +106,171 @@ function App() {
           {/* <img src={tornUp} alt="tornUp" className="tornUp" /> */}
         </div>
       </div>
-      <div className="Skills">
+      <div className="Skills" id="skills">
         <h2>Skills 🎯</h2>
         <div className="slider">
           <div className="slide-track">
             <div className="slide">
-              <img src={htmlIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={htmlIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={cssIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={cssIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={javascriptIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={javascriptIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={reactjsIcon} alt="logo-react" />
+              <a
+                href="https://fr.reactjs.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={reactjsIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={reactnativeIcon} alt="logo-react" />
+              <a
+                href="https://reactnative.dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={reactnativeIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={nodejsIcon} alt="logo-react" />
+              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+                <img src={nodejsIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={mongodbIcon} alt="logo-react" />
+              <a
+                href="https://www.mongodb.com/fr-fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={mongodbIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={stripeIcon} alt="logo-react" className="bigger" />
+              <a href="https://stripe.com/fr" target="_blank" rel="noreferrer">
+                <img src={stripeIcon} alt="logo-react" className="bigger" />
+              </a>
             </div>
             <div className="slide">
-              <img src={expressIcon} alt="logo-react" className="bigger" />
+              <a
+                href="https://expressjs.com/fr/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={expressIcon} alt="logo-react" className="bigger" />
+              </a>
             </div>
             <div className="slide">
-              <img src={expoIcon} alt="logo-react" />
+              <a href="https://expo.dev/" target="_blank" rel="noreferrer">
+                <img src={expoIcon} alt="logo-react" />
+              </a>
             </div>
 
             <div className="slide">
-              <img src={htmlIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={htmlIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={cssIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={cssIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={javascriptIcon} alt="logo-react" />
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={javascriptIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={reactjsIcon} alt="logo-react" />
+              <a
+                href="https://fr.reactjs.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={reactjsIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={reactnativeIcon} alt="logo-react" />
+              <a
+                href="https://reactnative.dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={reactnativeIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={nodejsIcon} alt="logo-react" />
+              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+                <img src={nodejsIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={mongodbIcon} alt="logo-react" />
+              <a
+                href="https://www.mongodb.com/fr-fr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={mongodbIcon} alt="logo-react" />
+              </a>
             </div>
             <div className="slide">
-              <img src={stripeIcon} alt="logo-react" className="bigger" />
+              <a href="https://stripe.com/fr" target="_blank" rel="noreferrer">
+                <img src={stripeIcon} alt="logo-react" className="bigger" />
+              </a>
             </div>
             <div className="slide">
-              <img src={expressIcon} alt="logo-react" className="bigger" />
+              <a
+                href="https://expressjs.com/fr/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={expressIcon} alt="logo-react" className="bigger" />
+              </a>
             </div>
             <div className="slide">
-              <img src={expoIcon} alt="logo-react" />
+              <a href="https://expo.dev/" target="_blank" rel="noreferrer">
+                <img src={expoIcon} alt="logo-react" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="Projects">
+      <div className="Projects" id="projects">
         <h2>Projects 💻</h2>
         <div className="web-projects">
           <h3>Web Projects</h3>
@@ -242,15 +364,27 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="Contact">
+      <div className="Contact" id="contact">
         <h2>Contact ☎️</h2>
         <div className="contact-2">
           <div className="contact-3">
-            <img src={profilePicture} alt="profile-picture" />
+            <img src={profilePicture} alt="achille" />
             <p className="email">acpasquier96@gmail.com</p>
             <p className="icons">
-              <FontAwesomeIcon icon={faGithub} className="github" />
-              <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+              <a
+                href="https://github.com/AchillePasquier"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} className="github" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/achille-pasquier-3150a41b3/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+              </a>
             </p>
             <p></p>
           </div>

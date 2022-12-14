@@ -58,6 +58,7 @@
   color: #572c8b;
   border-bottom: 1px solid #572c8b;
   transition: all 0.05s ease-out;
+  cursor: pointer;
 }
 
 .fa-bars,
