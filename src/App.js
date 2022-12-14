@@ -33,6 +33,8 @@ import signInAirbnb from "./images/airbnb-signIn.png";
 import homeAirbnb from "./images/airbnb-home.png";
 import roomAirbnb from "./images/airbnb-room.png";
 
+import CVAchillePasquier from "./documents/CV-AchillePasquier.pdf";
+
 // import tornUp from "./images/torn-paper.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -89,10 +91,7 @@ function App() {
             >
               CONTACT ME
             </Link>
-            <a
-              className="button"
-              href="https://www.linkedin.com/in/achille-pasquier-3150a41b3/"
-            >
+            <a className="button" href={CVAchillePasquier} download>
               SEE MY RESUME
             </a>
           </section>
