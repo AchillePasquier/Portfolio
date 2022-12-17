@@ -365,28 +365,34 @@ function App() {
         <div className="mobile-projects">
           <h3>Mobile Project</h3>
           <div className="airbnb">
-            <div className="airbnb-images">
-              <img
-                src={signInAirbnb}
-                alt="sign-in-airbnb"
-                data-aos="flip-up"
-                data-aos-easing="ease-out-cubic"
-              />
-              <img
-                src={homeAirbnb}
-                alt="home-airbnb"
-                data-aos="flip-up"
-                data-aos-delay="500"
-                data-aos-easing="ease-out-cubic"
-              />
-              <img
-                src={roomAirbnb}
-                alt="room-airbnb"
-                data-aos="flip-up"
-                data-aos-delay="1000"
-                data-aos-easing="ease-out-cubic"
-              />
-            </div>
+            <a
+              href="https://github.com/AchillePasquier/airbnb-reactnative"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="airbnb-images">
+                <img
+                  src={signInAirbnb}
+                  alt="sign-in-airbnb"
+                  data-aos="flip-up"
+                  data-aos-easing="ease-out-cubic"
+                />
+                <img
+                  src={homeAirbnb}
+                  alt="home-airbnb"
+                  data-aos="flip-up"
+                  data-aos-delay="500"
+                  data-aos-easing="ease-out-cubic"
+                />
+                <img
+                  src={roomAirbnb}
+                  alt="room-airbnb"
+                  data-aos="flip-up"
+                  data-aos-delay="1000"
+                  data-aos-easing="ease-out-cubic"
+                />
+              </div>
+            </a>
             <div className="airbnb-p">
               <p>
                 Simplified replica of the Airbnb mobile app, using React-Native
