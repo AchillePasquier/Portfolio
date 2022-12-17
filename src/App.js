@@ -275,57 +275,90 @@ function App() {
           <h3>Web Projects</h3>
           <div className="carousel-projects">
             <div className="vinted">
-              <img src={captureVinted} alt="vinted" data-aos="fade-up" />
-              <p>Complete full-stack project of a replica of the Vinted site</p>
+              <a
+                href="https://replique-vinted-achille.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={captureVinted} alt="vinted" data-aos="fade-up" />
+                <p>
+                  Complete full-stack project of a replica of the Vinted site
+                </p>
+              </a>
             </div>
 
             <div className="deliveroo">
-              <img
-                src={captureDeliveroo}
-                alt="deliveroo"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              />
-              <p>
-                Replica of a restaurant page from the Deliveroo site, using
-                ReactJS and an Express API
-              </p>
+              <a
+                href="https://replique-deliveroo-achillepasquier.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={captureDeliveroo}
+                  alt="deliveroo"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                />
+                <p>
+                  Replica of a restaurant page from the Deliveroo site, using
+                  ReactJS and an Express API
+                </p>
+              </a>
             </div>
 
             <div className="netflix">
-              <img
-                src={captureNetflix}
-                alt="netflix"
-                data-aos="fade-up"
-                data-aos-delay="1000"
-              />
-              <p>
-                Imitation of the Netflix home page with the display of movies by
-                category. Made using ReactJS and importing a database by a JSON
-                file
-              </p>
+              <a
+                href="https://replique-netflix-achillepasquier.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={captureNetflix}
+                  alt="netflix"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                />
+                <p>
+                  Imitation of the Netflix home page with the display of movies
+                  by category. Made using ReactJS and importing a database by a
+                  JSON file
+                </p>
+              </a>
             </div>
 
             <div className="todolist">
-              <img
-                src={captureToDoList}
-                alt="todolist"
-                data-aos="fade-up"
-                data-aos-delay="1500"
-              />
-              <p>Website for creating a "Todolist", Made using ReactJS</p>
+              <a
+                href="https://todolist-achillepasquier.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={captureToDoList}
+                  alt="todolist"
+                  data-aos="fade-up"
+                  data-aos-delay="1500"
+                />
+                <p>Website for creating a "Todolist", Made using ReactJS</p>
+              </a>
             </div>
 
             <div className="tripadvisor">
-              <img
-                src={captureTripAdvisor}
-                alt="tripadvisor"
-                data-aos="fade-up"
-                data-aos-delay="2000"
-              />
-              <p>
-                Replica of a page from the TripAdvisor site, using HTML and CSS
-              </p>
+              <a
+                href="https://replique-tripadvisor-achillepasquier.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={captureTripAdvisor}
+                  alt="tripadvisor"
+                  data-aos="fade-up"
+                  data-aos-delay="2000"
+                />
+                <p>
+                  Replica of a page from the TripAdvisor site, using HTML and
+                  CSS
+                </p>
+              </a>
             </div>
           </div>
         </div>

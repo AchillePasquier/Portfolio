@@ -213,6 +213,10 @@
   font-weight: 300;
 }
 
+.carousel-projects div a {
+  text-decoration: none;
+}
+
 .carousel-projects img {
   margin-top: 20px;
   width: 300px;
@@ -220,6 +224,7 @@
   object-fit: cover;
   border-radius: 5px;
   border: 1px solid gainsboro;
+  z-index: 1;
 }
 
 .vinted {
@@ -260,6 +265,7 @@
 
 .airbnb-images img {
   width: 160px;
+  z-index: 1;
 }
 
 .airbnb-p {
