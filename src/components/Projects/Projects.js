@@ -114,22 +114,22 @@ const Projects = () => {
               <img
                 src={signInAirbnb}
                 alt="sign-in-airbnb"
-                data-aos="flip-up"
-                data-aos-easing="ease-out-cubic"
+                // data-aos="flip-up"
+                // data-aos-easing="ease-out-cubic"
               />
               <img
                 src={homeAirbnb}
                 alt="home-airbnb"
-                data-aos="flip-up"
-                data-aos-delay="500"
-                data-aos-easing="ease-out-cubic"
+                // data-aos="flip-up"
+                // data-aos-delay="500"
+                // data-aos-easing="ease-out-cubic"
               />
               <img
                 src={roomAirbnb}
                 alt="room-airbnb"
-                data-aos="flip-up"
-                data-aos-delay="1000"
-                data-aos-easing="ease-out-cubic"
+                // data-aos="flip-up"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-out-cubic"
               />
             </div>
           </a>
