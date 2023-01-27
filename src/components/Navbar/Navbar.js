@@ -8,6 +8,9 @@ import { MenuItems } from "./MenuItem";
 import "./Navbar.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCar, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+library.add(faCar, faBars, faXmark);
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);

@@ -1,0 +1,171 @@
+.Projects {
+  background-color: white;
+}
+
+.Projects h2 {
+  margin-left: 7%;
+  color: #252525;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+  margin-top: 150px;
+}
+
+.Projects h3 {
+  color: #572c8b;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin-left: 7%;
+}
+
+.carousel-projects {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 60px;
+}
+
+.carousel-projects div {
+  margin-right: 2%;
+  width: 300px;
+}
+
+.carousel-projects div p {
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: justify;
+  color: gray;
+  line-height: 20px;
+  margin-top: 15px;
+  opacity: 0;
+  font-weight: 300;
+}
+
+.carousel-projects div a {
+  text-decoration: none;
+}
+
+.carousel-projects img {
+  margin-top: 20px;
+  width: 300px;
+  height: 173.26px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  z-index: 1;
+}
+
+.vinted {
+  margin-left: 3%;
+}
+
+.tripadvisor {
+  margin-right: 3%;
+}
+
+.carousel-projects div:hover {
+  cursor: pointer;
+}
+
+.carousel-projects div:hover img {
+  /* box-shadow: 0px 10px 30px #868a8a; */
+  transition: all 0.3s ease-out !important;
+}
+
+.carousel-projects div:hover p {
+  opacity: 0.8;
+  transition: all 0.4s ease-out !important;
+}
+
+.airbnb {
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 80px;
+}
+
+.airbnb-images {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.airbnb-images img {
+  width: 160px;
+  z-index: 1;
+}
+
+.airbnb-p {
+  width: 320px;
+  height: 322.23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.airbnb div p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: gray;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1117px) {
+  .airbnb {
+    flex-direction: column;
+  }
+
+  .airbnb-p {
+    height: auto;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .airbnb {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images {
+    width: 100%;
+  }
+
+  .airbnb-images img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .airbnb {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .airbnb-images img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  .airbnb-p {
+    width: 100%;
+  }
+
+  .airbnb div p {
+    text-align: center;
+  }
+}

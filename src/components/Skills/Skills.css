@@ -1,0 +1,56 @@
+.Skills h2 {
+  margin-left: 7%;
+  color: #252525;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 50s linear infinite;
+  display: flex;
+  width: calc(250px * 20);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100px;
+  height: 100px;
+}
+
+.bigger {
+  width: 105px !important;
+}
+
+.slide img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
