@@ -10,6 +10,14 @@ import signInAirbnb from "../../images/airbnb-signIn.png";
 import homeAirbnb from "../../images/airbnb-home.png";
 import roomAirbnb from "../../images/airbnb-room.png";
 
+import startedVinted from "../../images/vintedreactnative/started-vinted-iphone14pro.png";
+import registerVinted from "../../images/vintedreactnative/register-vinted-iphoneSE.png";
+import homeVinted from "../../images/vintedreactnative/accueil-vinted-iphoneSE.png";
+import productVinted from "../../images/vintedreactnative/product-vinted-iphone14pro.png";
+import buyVinted from "../../images/vintedreactnative/buy-vinted-iphone14pro.png";
+import sellVinted from "../../images/vintedreactnative/sell-vinted-iphoneSE.png";
+import logOutVinted from "../../images/vintedreactnative/logout-vinted-iphoneSE.png";
+
 const Projects = () => {
   return (
     <div className="Projects" id="projects">
@@ -137,6 +145,69 @@ const Projects = () => {
             <p>
               Simplified replica of the Airbnb mobile app, using React-Native
               and an Express API.
+            </p>
+          </div>
+        </div>
+        <div className="airbnb">
+          <a
+            href="https://github.com/AchillePasquier/vinted-reactnative"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="airbnb-images">
+              <img
+                src={startedVinted}
+                alt="sign-in-airbnb"
+                // data-aos="flip-up"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={registerVinted}
+                alt="home-airbnb"
+                // data-aos="flip-up"
+                // data-aos-delay="500"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={homeVinted}
+                alt="room-airbnb"
+                // data-aos="flip-up"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={productVinted}
+                alt="sign-in-airbnb"
+                // data-aos="flip-up"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={buyVinted}
+                alt="home-airbnb"
+                // data-aos="flip-up"
+                // data-aos-delay="500"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={sellVinted}
+                alt="room-airbnb"
+                // data-aos="flip-up"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-out-cubic"
+              />
+              <img
+                src={logOutVinted}
+                alt="room-airbnb"
+                // data-aos="flip-up"
+                // data-aos-delay="1000"
+                // data-aos-easing="ease-out-cubic"
+              />
+            </div>
+          </a>
+          <div className="airbnb-p">
+            <p>
+              Replica of the Vinted mobile app, using React-Native and an
+              Express API.
             </p>
           </div>
         </div>
