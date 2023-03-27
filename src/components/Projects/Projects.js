@@ -120,6 +120,7 @@ const Projects = () => {
           >
             <div className="airbnb-images">
               <img
+                className="first-img"
                 src={signInAirbnb}
                 alt="sign-in-airbnb"
                 // data-aos="flip-up"
@@ -158,6 +159,7 @@ const Projects = () => {
               <img
                 src={startedVinted}
                 alt="sign-in-airbnb"
+                className="first-img"
                 // data-aos="flip-up"
                 // data-aos-easing="ease-out-cubic"
               />
@@ -171,6 +173,7 @@ const Projects = () => {
               <img
                 src={homeVinted}
                 alt="room-airbnb"
+
                 // data-aos="flip-up"
                 // data-aos-delay="1000"
                 // data-aos-easing="ease-out-cubic"
